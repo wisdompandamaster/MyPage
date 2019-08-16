@@ -1,10 +1,32 @@
 <html>
   <head>
 <script src="https://kit.fontawesome.com/15da05e81f.js"></script>
-<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery
-/jquery-1.4.min.js"></script>
-
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+<script>
+  $(document).ready(function(){
+  $(".btn").click(function(){
+    $(".smenu").toggleClass("side");
+  });
+    $(".txtb input").focus(function(){
+      $(this).addClass("focus");
+    });
+    $(".txtb input").blur(function(){
+      if($(this).val() == "")
+      {$(this).removeClass("focus");}
+    });
+    $("a").click(function() {
+      $("html, body").animate({
+        scrollTop: $($(this).attr("href")).offset().top - 100
+      }, {
+        duration: 1000,
+        easing: "swing"
+      });
+      return false;
+    });
+  });
+  </script>
 <style>
+
 *{
   margin:0;
   padding:0;
@@ -282,29 +304,7 @@ footer{
   color:white;
 }
 </style>
-<script>
-$(document).ready(function(){
-$(".btn").click(function(){
-  $(".smenu").toggleClass("side");
-});
-  $(".txtb input").focus(function(){
-    $(this).addClass("focus");
-  });
-  $(".txtb input").blur(function(){
-    if($(this).val() == "")
-    {$(this).removeClass("focus");}
-  });
-  $("a").click(function() {
-    $("html, body").animate({
-      scrollTop: $($(this).attr("href")).offset().top - 100
-    }, {
-      duration: 1000,
-      easing: "swing"
-    });
-    return false;
-  });
-});
-</script>
+
   </head>
   
   <body id="ch0">
