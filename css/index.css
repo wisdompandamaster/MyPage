@@ -1,0 +1,276 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+  }
+  body{
+    min-width:300px;
+    height:100%;
+  }
+  .nav{
+    width:100%;
+    height:60px;
+    background-color:#007ACC;
+    position: fixed;
+    box-shadow: 2px 2px 5px #000;
+    display:flex;
+    z-index:3;
+  }
+  .nav .btn i{
+    margin-left:20px;
+    font-size:30px;
+    line-height:60px;
+    text-align:center;
+    color:#fff;
+  }
+  .nav .btn i:hover{
+    color:#252526;
+  }
+  .smenu{
+    font-size:30px;
+    background-color:rgba(51,51,51,0.5);
+    position: fixed;
+    z-index:2;
+    top:60px;
+    right:0px;
+    left:0px;
+    width:100%;
+    padding:10px;
+    margin-top:-150px;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: flex-center;
+    align-items: center;
+    justify-content: space-around;
+    transition:0.6s all;
+  }
+  .side{
+    margin-top:0;
+  }
+  .smenu a{
+    color:#fff;
+    border: solid 4px rgba(0,0,0,0);
+  }
+  .smenu a:hover{
+     border-bottom:solid 4px #007ACC;
+  }
+  .nav h1{
+    font-size:30px;
+    line-height:60px;
+    margin-left:20px;
+    color:#fff;
+  }
+  .to-top a i{
+    font-size:30px;
+    z-index:5;
+    position: fixed;
+    line-height:40px;
+    bottom: 2%;
+    right: 2%;
+    border:solid 3px #007ACC;
+    text-align:center;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    transition:.5s ease-in-out;
+    color:#000;
+  }
+  .to-top a i:hover{
+    background-color:#fff;
+  }
+  
+  
+  
+  
+  
+  
+  main{ 
+    width:100%;
+    background-color:#fff;
+    padding-top:60px;
+  }
+  main .container{
+    background-color:#fff;
+    margin:0 auto;
+  }
+  .container .about{
+    width:100%;
+    color:#fff;
+    background-color:#252526;
+    text-align:center;
+    padding:20px 0px;
+  }
+  .container .about img{
+    width:200px;
+    border:solid 10px #007ACC;
+    border-radius:50%;
+  }
+  .container .about p{
+    font-size:20px;
+    padding:8px;
+  }
+  h2{
+    font-size:30px;
+    padding-top:5px;
+    text-align:center;
+  }
+  .port h1{
+    font-size:40px;
+    padding-left:10%;
+    padding-top:20px;
+  }
+  .port p{
+    font-size:20px;
+    padding-top:10px;
+    padding-left:8%;
+  }
+  .port h2 a{
+    color:#252526;
+  }
+  .port h2 a:hover{
+    border-bottom:solid 4px #007ACC; 
+  }
+  hr{
+    width:85%;
+    margin:8% auto 30px;
+    height:3px;
+    border:none;
+    border-top:solid 5px;  
+  }
+  .contact h1{
+    text-align:center;
+    padding-bottom:30px;
+  }
+  .send{
+    margin:0 auto 50px;
+    padding:20px 0px;
+    max-width:80%;
+    font-family:Arial;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: flex-start;
+    background:#EEEEEE;
+  
+  }
+  .txtb{
+    border-bottom: solid 2px #adadad;
+    position:relative;
+     margin:30px 0;
+    width:100%; 
+  }
+  .txtb input{
+    font-size:25px;
+    color:#333;
+    border:none;
+    outline:none;
+    background:none;
+    padding:0 5px;
+    height:40px;
+    position:relative;
+    z-index:1;
+    
+  }
+  .txtb span::before{
+    content:attr(data-placeholder);
+    font-size:30px;
+    position:absolute;
+    z-index:0;
+    top:50%;
+    left:5px;
+    color:#adadad;
+    transform:translateY(-50%);
+    transition: .5s;
+  }
+  
+  .focus + span::before{
+    top: -10px;
+    color:#007ACC;
+  }
+  button{
+    font-size:30px;
+    width:90px;
+    height:40px;
+  }
+  .left{
+    padding-top:60px;
+    font-size:25px;
+    width:50%;
+  }
+  .left p{
+    padding-bottom:10px;
+  }
+  .right{
+    width:80%;
+    max-width:440px;
+  }
+   
+  
+  
+  
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  footer{
+    background-color:#333333;
+  }
+  .foot-up{
+    width:90%;
+    text-align:center;
+    background-color:#333333;
+    color:#fff;
+    font-size:20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding:20px 0px;
+  }
+  .foot-up>div{
+    margin:40px 0px;
+  }
+  .foot-up div>a i{
+    margin-top:20px;
+    font-size:20px;
+    width:50px;
+    height:50px;
+    border:solid 2px #fff;
+    border-radius:50%;
+    color:#fff;
+    display:inline-block;
+    line-height:50px;
+    transition: .5s ease-in-out;
+  }
+  .foot-up div>a i:hover{
+    color:#007ACC;
+    background-color:#fff;  
+  }
+  .foot-up a{
+    color:#007ACC;
+  }
+  .foot-up a:hover{
+    text-decoration:underline;
+  }
+  .foot-down{
+    width:100%;
+    height:60px; 
+    background-color:#007ACC;
+    box-shadow: 2px 2px 5px #000;
+  }
+  .foot-down p{
+    line-height:60px;
+    text-align:center;
+    font-size:18px;
+    color:white;
+  }
